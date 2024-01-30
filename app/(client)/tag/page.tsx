@@ -26,7 +26,17 @@ const page = async () => {
   return (
     <div>
       {/* <BlogHeader title="Tags" /> */}
-      <div>
+      <div className="w-full text-center my-5">
+        Blog
+        <Link href="/tag" className="mx-5">
+        #tags
+        </Link>
+        
+
+      </div>
+      <div className="w-[100vw] h-[62vh] flex justify-center">
+      
+      <div className="w-[80vw]">
         {tags?.length > 0 &&
           tags?.map((tag) => (
             <Link key={tag?._id} href={`/tag/${tag.slug.current}`}>
@@ -36,6 +46,10 @@ const page = async () => {
             </Link>
           ))}
       </div>
+      </div>
+
+
+      
     </div>
   );
 };

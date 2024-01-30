@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Lilita_One, VT323} from 'next/font/google'
 import { Post } from '@/app/utils/interface'
+import BlogHeader from '@/app/components/blogHeader'
 
 interface Props {
   post: Post;
@@ -14,6 +15,7 @@ const PostComponent = ({post}: Props) => {
   return (
 
     <div className={cardStyle}>
+      
       <Link href={`/posts/${post?.slug?.current}`}>
         <h2 className={`${font.className} text-2xl dark:text-slate-300`}>{post?.title}</h2>
         <p className={`${dateFont.className} my-2 text-purple-300`}>{new Date(post?.publishedAt).toDateString()}</p>

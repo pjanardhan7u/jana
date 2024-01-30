@@ -3,6 +3,7 @@ import PostComponent from "@/app/components/PostComponent";
 import { Post } from "@/app/utils/interface";
 import { client } from "@/sanity/lib/client";
 import React from "react";
+import Link from "next/link";
 
 async function getPostsByTag(tag: string) {
   const query = `
@@ -37,11 +38,25 @@ const page = async ({ params }: Params) => {
   return (
     <div>
       {/* <BlogHeader title={`#${params?.slug}`} tags /> */}
-      <div>
+
+      <div className="w-full text-center my-5">
+        Blog
+        <Link href="/tag" className="mx-5">
+        #tags
+        </Link>
+        
+
+      </div>
+      <div className="w-[100vw] h-[62vh] flex justify-center">
+      
+      <div className="w-[80vw]">
         {posts?.length > 0 && posts?.map((post) => (
           <PostComponent key={post?._id} post={post} />
         ))}
       </div>
+        
+      </div>
+     
     </div>
   );
 };

@@ -38,7 +38,7 @@ export default function RootLayout({
         ${firaCode.className} 
         ${inter.className}  bg-gradient-to-r from-slate-900 via-purple-900 
         to-slate-900  relative pt-28 
-        sm:pt-36 text-gray-50 `}
+        sm:pt-25 text-gray-50 `}
       >
 
             <ActiveSectionContextProvider>
