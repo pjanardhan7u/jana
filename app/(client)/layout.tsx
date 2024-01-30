@@ -9,25 +9,22 @@ import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/app/context/active-section-context";
 import Footer from "@/app/components/footer";
 
-
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
-
 export const metadata = {
   title: "Jana's Portfolio",
   description: "Jana is a full stack web developer and student at NIT Trichy.",
-  icons:{
+  icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
     shortcut: ["/apple-touch-icon.png"],
   },
   manifest: "/site.webmanifest",
 };
-
 
 export default function RootLayout({
   children,
@@ -43,12 +40,14 @@ export default function RootLayout({
         to-slate-900  relative pt-28 
         sm:pt-36 text-gray-50 `}
       >
-        <ActiveSectionContextProvider>
-        <Header />
-          {children}
-          <Footer />
-          <Toaster position="top-right" />
-          </ActiveSectionContextProvider>
+
+            <ActiveSectionContextProvider>
+              <Header />
+              {children}
+              <Footer />
+              <Toaster position="top-right" />
+            </ActiveSectionContextProvider>
+
       </body>
     </html>
   );
