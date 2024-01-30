@@ -37,12 +37,12 @@ export default function Header() {
 
   return (
     <>
-      {width > 650 ? (
-        <div className="w-full h-[3rem] z-[998]  fixed top-0 g-opacity-100">
+      {width > 100 ? (
+
         <header className="z-[999] relative">
           <motion.div
             className=" w-[18rem] mt-2 sm:mt-0 fixed top-0 left-1/2 h-[3.5rem] 
-            w-30 px-20 rounded-none border
+            w-30 px-20 rounded-full border
              dark:border-white border-opacity-40 
              bg-opacity-100 shadow-lg sm:shadow-black/[0.03] 
             backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[47rem] sm:rounded-full
@@ -67,7 +67,7 @@ export default function Header() {
                 >
                   <Link
                     className={clsx(
-                      "flex w-full  md:mx-1 font-bold items-center justify-center px-5 py-4 hover:text-gray-200 transition dark:text-gray-400 dark:hover:text-gray-300",
+                      "flex w-full  md:mx-1 font-bold items-center sm:justify-center ml-2   px-3 py-2 sm:px-5 sm:py-4 text-[15px] sm:text-[0.9rem] hover:text-gray-200 transition ",
                       {
                         "text-gray-200  ":
                           activeSection === link.name,
@@ -98,7 +98,7 @@ export default function Header() {
             </ul>
           </nav>
         </header>
-    </div>
+
       ) : (
         <div></div>
       )}
