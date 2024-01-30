@@ -41,9 +41,9 @@ async function getPost(slug: string) {
 export const revalidate = 60;
 
 const page = async ({ params }: Params) => {
-  console.log(params, "parmas");
+  // console.log(params, "parmas");
   const post: Post = await getPost(params?.slug);
-  console.log(post, "post");
+  // console.log(post, "post");
 
   if (!post) {
     notFound();

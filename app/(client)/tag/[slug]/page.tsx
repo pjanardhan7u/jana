@@ -33,7 +33,7 @@ interface Params {
 
 const page = async ({ params }: Params) => {
   const posts: Array<Post> = await getPostsByTag(params.slug);
-  console.log(posts, "posts by tag");
+  // console.log(posts, "posts by tag");
   return (
     <div>
       <Header title={`#${params?.slug}`} tags />
