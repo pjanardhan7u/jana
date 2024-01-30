@@ -41,10 +41,11 @@ export default function Header() {
         <div className="w-full h-[3rem] z-[998]  fixed top-0 g-opacity-100">
         <header className="z-[999] relative">
           <motion.div
-            className=" w-[18rem] mt-2 sm:mt-0  fixed top-0 left-1/2 h-[3.5rem] w-30 px-20 rounded-none border
+            className=" w-[18rem] mt-2 sm:mt-0 fixed top-0 left-1/2 h-[3.5rem] 
+            w-30 px-20 rounded-none border
              dark:border-white border-opacity-40 
              bg-opacity-100 shadow-lg sm:shadow-black/[0.03] 
-            backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[39rem] sm:rounded-full
+            backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[47rem] sm:rounded-full
              bg-black/70 border-black/40 dark:bg-opacity-75"
             initial={{ y: -100, x: "-50%", opacity: 0 }}
             animate={{ y: 0, x: "-50%", opacity: 1 }}

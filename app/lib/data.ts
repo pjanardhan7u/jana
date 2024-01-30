@@ -9,27 +9,32 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 export const links = [
   {
     name: "Home",
-    hash: "#home",
+    hash: "/",
+  },
+  {
+    name: "Blog",
+    hash: "/blog",
   },
   {
     name: "About",
-    hash: "#about",
+    hash: "/#about",
   },
+  
   {
     name: "Skills",
-    hash: "#skills",
+    hash: "/#skills",
   },
   {
     name: "Projects",
-    hash: "#projects",
+    hash: "/#projects",
   },
   {
     name: "Gallary",
-    hash: "#gallary",
+    hash: "/#gallary",
   },
   {
     name: "Contact",
-    hash: "#contact",
+    hash: "/#contact",
   },
 ] as const;
 
