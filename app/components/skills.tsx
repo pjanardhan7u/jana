@@ -2,10 +2,10 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { skillsData } from "../lib/data";
-import { useSectionInView } from "../lib/hooks";
+import { skillsData } from "@/app/lib/data";
+import { useSectionInView } from "@/app/lib/hooks";
 import { motion } from "framer-motion";
-import { nonTectSkillsData } from "../lib/data";
+import { nonTectSkillsData } from "@/app/lib/data";
 
 const fadeInAnimationVariants = {
   initial: {

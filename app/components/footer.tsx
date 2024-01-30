@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { SocialMediaData } from "../lib/data";
+import { SocialMediaData } from "@/app/lib/data";
 import Link from "next/link";
 
 export default function Footer() {

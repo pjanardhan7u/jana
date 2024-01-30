@@ -6,7 +6,7 @@ interface Props {
   tags?: boolean;
 }
 
-const Header = ({ title = "", tags = false }: Props) => {
+const BlogHeader = ({ title = "", tags = false }: Props) => {
   return (
     <header className="py-14 px-4 mb-12 text-center border-b dark:border-purple-900">
       <h2 className="uppercase text-2xl mx-auto max-w-2xl font-bold">
@@ -22,4 +22,4 @@ const Header = ({ title = "", tags = false }: Props) => {
   );
 };
 
-export default Header;
+export default BlogHeader;

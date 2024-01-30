@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import { Provider } from "../utils/Provider";
-import Header from "../components/header";
+// import Navbar from "../components/Navbar";
+// import { Provider } from "../utils/Provider";
+import Header from "@/app/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import ActiveSectionContextProvider from "../context/active-section-context";
-import Footer from "../components/footer";
+import ActiveSectionContextProvider from "@/app/context/active-section-context";
+import Footer from "@/app/components/footer";
 
 
 import { Toaster } from "react-hot-toast";

@@ -1,13 +1,13 @@
 
 
-import About from "../components/about";
-import Contact from "../components/contact";
-import Intro from "../components/intro";
-import Projects from "../components/projects";
-import Skills from "../components/skills";
-import Gallary from "../components/gallary";
-import Slider from "../components/quotes";
-import Blog from "../components/blog";
+import About from "@/app/components/about";
+import Contact from "@/app/components/contact";
+import Intro from "@/app/components/intro";
+import Projects from "@/app/components/projects";
+import Skills from "@/app/components/skills";
+import Gallary from "@/app/components/gallary";
+import Slider from "@/app/components/quotes";
+import Blog from "@/app/components/blog";
 
 export default function Home() {
   return (

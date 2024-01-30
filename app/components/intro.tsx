@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight} from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { useSectionInView } from "../lib/hooks";
-import { useActiveSectionContext } from "../context/active-section-context";
+import { useSectionInView } from "@/app/lib/hooks";
+import { useActiveSectionContext } from "@/app/context/active-section-context";
 import TypeEffect from "./typeEffect";
 
 export default function Intro() {
@@ -51,7 +51,7 @@ export default function Intro() {
       >
         <div>
           <span className="font-bold">
-            Hello World, I'm  {TypeEffect()}
+            Hello World, I&apos;m  {TypeEffect()}
             
           </span>
         </div>

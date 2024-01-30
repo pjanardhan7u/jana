@@ -1,4 +1,4 @@
-import Header from "@/app/components/Header";
+// import BlogHeader from "@/app/components/Header";
 import Navbar from "@/app/components/Navbar";
 import { Tag } from "@/app/utils/interface";
 import { client } from "@/sanity/lib/client";
@@ -25,7 +25,7 @@ const page = async () => {
   // console.log(tags, "tags");
   return (
     <div>
-      <Header title="Tags" />
+      {/* <BlogHeader title="Tags" /> */}
       <div>
         {tags?.length > 0 &&
           tags?.map((tag) => (

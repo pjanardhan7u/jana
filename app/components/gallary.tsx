@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { imgGalaryData } from "../lib/data";
+import { imgGalaryData } from "@/app/lib/data";
 
 export default function Gallary() {
   return (

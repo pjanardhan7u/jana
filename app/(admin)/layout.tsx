@@ -1,5 +1,5 @@
-import CmsNavbar from "../components/CmsNavbar";
-import { Provider } from "../utils/Provider";
+import CmsNavbar from "@/app/components/CmsNavbar";
+import { Provider } from "@/app/utils/Provider";
 import "./globals.css";
 
 export const metadata = {

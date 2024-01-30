@@ -3,7 +3,7 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
-import { useSectionInView } from "../lib/hooks";
+import { useSectionInView } from "@/app/lib/hooks";
 import Image from "next/image";
 
 export default function About() {
@@ -25,7 +25,7 @@ export default function About() {
       text-[20px]  mb-5">
         <p >
           <span className="ml-10"></span> At the ripe age of 23 (as of 2024),
-          I am a <span className="font-bold">science enthusiast </span>
+          I&apos;m a <span className="font-bold">science enthusiast </span>
             with a heart captivated by the wonders of
           nature and a mind <span className="font-bold">endlessly curious </span> about the mysteries of 
           the cosmos.
@@ -55,14 +55,14 @@ export default function About() {
         >
           <p className="mb-5  ">
             <span className="ml-10"></span>Armed with a{" "}
-            <span className="font-bold">B.Sc in Computer Science,</span> I am
+            <span className="font-bold">B.Sc in Computer Science,</span> I&apos;m
             currently pursuing <span className="font-bold">MCA</span>   (Master of Computer Application) at the
             prestigious
             <span className="font-bold"> NIT Trichy.</span>
           </p>
 
           <p className="mt-10 ">
-            <span className="ml-6"></span>When I am not decoding the secrets of
+            <span className="ml-6"></span>When I&apos;m not decoding the secrets of
             algorithms, you will find me immersed in Hollywood movies and
             documentaries, unraveling the intricacies of the human psyche
             through biographies and psycology books .
@@ -72,7 +72,7 @@ export default function About() {
 
       <div className="w-[20rem] sm:w-[40rem] text-[20px] ">
         <p className=" md:mx-5 mx-2">
-          <span className="ml-10"></span>  I am
+          <span className="ml-10"></span>  I&apos;m
           currently exploring the fascinating world of
           Next.js, turning every line of code into a portal of endless
           possibilities.I am on the <span className="font-bold">hunt</span>  for

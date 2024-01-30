@@ -1,4 +1,4 @@
-import Header from "@/app/components/Header";
+// import BlogHeader from "@/app/components/Header";
 import PostComponent from "@/app/components/PostComponent";
 import { Post } from "@/app/utils/interface";
 import { client } from "@/sanity/lib/client";
@@ -36,7 +36,7 @@ const page = async ({ params }: Params) => {
   // console.log(posts, "posts by tag");
   return (
     <div>
-      <Header title={`#${params?.slug}`} tags />
+      {/* <BlogHeader title={`#${params?.slug}`} tags /> */}
       <div>
         {posts?.length > 0 && posts?.map((post) => (
           <PostComponent key={post?._id} post={post} />
