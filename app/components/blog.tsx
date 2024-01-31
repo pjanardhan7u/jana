@@ -45,7 +45,7 @@ const Blog = () => {
                     font-medium rounded-lg text-sm px-5 py-2.5 text-center flex items-center justify-center
                     dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2 md:text-[1.5rem]"
             >
-              Read More
+              Goto Blog
             </button>
           </Link>
         </Link>
