@@ -26,13 +26,14 @@ export default function About() {
         <p >
           <span className="ml-10"></span> At the ripe age of 23 (as of 2024),
           I&apos;m a <span className="font-bold">science enthusiast </span>
-            with a heart captivated by the wonders of
-          nature and a mind <span className="font-bold">endlessly curious </span> about the mysteries of 
+            and lover
+          nature and a mind <span className="font-bold">
+            endlessly curious </span> about the mysteries of 
           the cosmos.
         </p>
       </div>
 
-      <div className="text-justify sm:w-[40rem]
+      <div className="text-left sm:w-[40rem]
        flex-row sm:flex justify-center  ">
         <div
           className="rounded-xl  w-full h-[18rem] flex justify-center
@@ -63,9 +64,8 @@ export default function About() {
 
           <p className="mt-10 ">
             <span className="ml-6"></span>When I&apos;m not decoding the secrets of
-            algorithms, you will find me immersed in Hollywood movies and
-            documentaries, unraveling the intricacies of the human psyche
-            through biographies and psycology books .
+            algorithms, you will find me immersed in 
+            documentaries,studying biographies and psycology.
           </p>
         </div>
       </div>
@@ -76,8 +76,7 @@ export default function About() {
           currently exploring the fascinating world of
           Next.js, turning every line of code into a portal of endless
           possibilities.I am on the <span className="font-bold">hunt</span>  for
-            a full-time position that ignites my passion for software
-            development
+            a full-time position.
         </p>
    
       </div>

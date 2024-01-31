@@ -10,25 +10,29 @@ const Blog = () => {
       
       <div><SectionHeading>My Blog</SectionHeading></div>
       <div className="">
-        <div>
-          <h2 className="sm:text-[1.5rem] font-bold ">My bucket list of impossible things.</h2>
-          <p className="sm:text-[1rem] mb-5 mt-2">
-          Go to space and walk on MARS ,
-          Drink coffee with Billie Eilish,
-          skydiving ...etc
-
-          </p>
+        <div className="border-[2px] border-purple-400 border-opacity-50 ">
+          <div className="mx-2">
+            <h2 className=" sm:text-[1.5rem] font-bold ">My bucket list of impossible things.</h2>
+            <p className="sm:text-[1rem] mb-5 mt-2">
+            Go to space and walk on MARS ,
+            Drink coffee with Billie Eilish,
+            skydiving ...etc
+            
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h2 className="sm:text-[1.5rem]  font-bold">My first love story.</h2>
-          <p className="sm:text-[1rem] mb-5 mt-2">It happed in 2011 when I was 11 years old.</p>
+        <div className="my-3 border-[2px]  border-purple-400 border-opacity-50">
+          <div className="mx-2">
+            <h2 className="sm:text-[1.5rem]  font-bold">My first love story.</h2>
+            <p className="sm:text-[1rem] mb-5 mt-2">It happed in 2011 when I was 11 years old.</p>
+          </div>
         </div>
 
         
       </div>
 
-      <div className="w-full flex justify-center ">
+      <div className=" w-full flex justify-center ">
         <Link href="/blog" className="">
           <Link
             href="https://github.com/pjanardhan7u?tab=repositories"
