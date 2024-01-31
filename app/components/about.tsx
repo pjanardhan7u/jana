@@ -26,8 +26,8 @@ export default function About() {
         <p >
           <span className="ml-10"></span> At the ripe age of 23 (as of 2024),
           I&apos;m a <span className="font-bold">science enthusiast </span>
-            and lover
-          nature and a mind <span className="font-bold">
+          and lover
+          nature and with a mind <span className="font-bold">
             endlessly curious </span> about the mysteries of 
           the cosmos.
         </p>
