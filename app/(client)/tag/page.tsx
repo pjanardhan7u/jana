@@ -1,5 +1,4 @@
 // import BlogHeader from "@/app/components/Header";
-import Navbar from "@/app/components/Navbar";
 import { Tag } from "@/app/utils/interface";
 import { client } from "@/sanity/lib/client";
 import Link from "next/link";
@@ -23,7 +22,7 @@ export const revalidate = 10;
 
 const page = async () => {
   const tags: Tag[] = await getAllTags();
-  // console.log(tags, "tags");
+
   return (
     <div>
       <BlogHeader title="Tags" />

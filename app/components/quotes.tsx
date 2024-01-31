@@ -5,6 +5,13 @@ import Image from "next/image";
 
 const people = [
   {
+    id: 4,
+    image: "/images/people/rgv.jpg",
+    name: "RGV",
+    title:"Philosopher",
+    quote:"The sooner you let go of what you heard from your parents, what you learned in school, what you learned from society, the sooner you become intelligent.",
+  },
+  {
     id: 1,
     image: "/images/people/jana.jpg",
     name: "Jana",
@@ -27,13 +34,7 @@ const people = [
     title:"Maths Lecturer",
     quote:"The future belongs to those who believe in the beauty of their dreams.",
   },
-  {
-    id: 4,
-    image: "/images/people/rgv.jpg",
-    name: "RGV",
-    title:"Philosopher",
-    quote:"The sooner you let go of what you heard from your parents, what you learned in school, what you learned from society, the sooner you become intelligent.",
-  },
+ 
   {
     id: 5,
     image: "/images/people/nietzche.jpg",

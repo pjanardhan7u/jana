@@ -1,5 +1,3 @@
-
-
 import About from "@/app/components/about";
 import Contact from "@/app/components/contact";
 import Intro from "@/app/components/intro";
@@ -12,11 +10,10 @@ import Blog from "@/app/components/blog";
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4 ">
-
       <Intro />
-      <Blog/>
+      <Blog />
       <About />
-      <Skills  />
+      <Skills />
       <Projects />
       <Gallary />
       <Slider />
@@ -24,4 +21,3 @@ export default function Home() {
     </main>
   );
 }
-

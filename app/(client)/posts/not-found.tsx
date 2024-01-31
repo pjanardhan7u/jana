@@ -1,7 +1,6 @@
 
 import Link from "next/link";
 import React from "react";
-import BlogHeader from "@/app/components/blogHeader";
 const NotFound = () => {
   return (
     <div>

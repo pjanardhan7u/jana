@@ -11,7 +11,6 @@ const CmsNavbar = () => {
         <BackArrowIcon />
       </Link>
 
-      
     </div>
   );
 };

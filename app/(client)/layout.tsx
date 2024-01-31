@@ -1,13 +1,10 @@
 import { Fira_Code } from "next/font/google";
-import "./globals.css";
 import Header from "@/app/components/header";
-import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/app/context/active-section-context";
 import Footer from "@/app/components/footer";
-
 import { Toaster } from "react-hot-toast";
-
+import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
@@ -37,14 +34,12 @@ export default function RootLayout({
         to-slate-900  relative pt-28 
         sm:pt-25 text-gray-50 `}
       >
-
-            <ActiveSectionContextProvider>
-              <Header />
-              {children}
-              <Footer />
-              <Toaster position="top-right" />
-            </ActiveSectionContextProvider>
-
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+          <Footer />
+          <Toaster position="top-right" />
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
