@@ -6,8 +6,9 @@ import { PortableText } from "@portabletext/react";
 import { VT323 } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from 'next/navigation'
+import { notFound } from "next/navigation";
 import React from "react";
+import BlogHeader from "@/app/components/blogHeader";
 
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
@@ -50,36 +51,31 @@ const page = async ({ params }: Params) => {
   }
 
   return (
-    <div>
-         <div className="w-full text-center my-5 ">
-      <Link href="/blog" className="mx-5">
-        #blogs
-        </Link>
+    <div className="w-[100vw] flex justify-center">
+      
 
-        <Link href="/tag" className="mx-5">
-        #tags
-        </Link>
+      <div className="w-[90vw]">
+      <BlogHeader title="" />
+        <div className="mt-5 text-center  ">
+          <span className={`${dateFont?.className} text-purple-500`}>
+            {new Date(post?.publishedAt).toDateString()}
+          </span>
+          <div className="mt-5">
+            {post?.tags?.map((tag) => (
+              <Link key={tag?._id} href={`/tag/${tag.slug.current}`}>
+                <span className="mr-2 p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900">
+                  #{tag.name}
+                </span>
+              </Link>
+            ))}
+          </div>
         
-
-      </div>
-
-      {/* <BlogHeader title={post?.title} /> */}
-      <div className="text-center ">
-        <span className={`${dateFont?.className} text-purple-500`}>
-          {new Date(post?.publishedAt).toDateString()}
-        </span>
-        <div className="mt-5">
-          {post?.tags?.map((tag) => (
-            <Link key={tag?._id} href={`/tag/${tag.slug.current}`}>
-              <span className="mr-2 p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900">
-                #{tag.name}
-              </span>
-            </Link>
-          ))}
-        </div>
-
-        <div className={richTextStyles}>
-          <PortableText value={post?.body} components={myPortableTextComponents} />
+          <div className={richTextStyles}>
+            <PortableText
+              value={post?.body}
+              components={myPortableTextComponents}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -105,6 +101,7 @@ const richTextStyles = `
 mt-14
 text-justify
 max-w-2xl
+text-[1rem]
 m-auto
 prose-headings:my-5
 prose-heading:text-2xl

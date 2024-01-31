@@ -4,6 +4,7 @@ import { Tag } from "@/app/utils/interface";
 import { client } from "@/sanity/lib/client";
 import Link from "next/link";
 import React from "react";
+import BlogHeader from "@/app/components/blogHeader";
 
 async function getAllTags() {
   const query = `
@@ -25,24 +26,17 @@ const page = async () => {
   // console.log(tags, "tags");
   return (
     <div>
-      {/* <BlogHeader title="Tags" /> */}
-      <div className="w-full text-center my-5">
-      <Link href="/blog" className="mx-5">
-        #blogs
-        </Link>
-        <Link href="/tag" className="mx-5">
-        #tags
-        </Link>
-        
+      <BlogHeader title="Tags" />
 
-      </div>
-      <div className="w-[100vw]  flex justify-center">
+      <div className="w-[100vw] mt-5  flex justify-center">
       
       <div className="w-[80vw]">
         {tags?.length > 0 &&
           tags?.map((tag) => (
             <Link key={tag?._id} href={`/tag/${tag.slug.current}`}>
-              <div className="mb-2 p-2 text-sm lowercase dark:bg-gray-950 border dark:border-gray-900 hover:text-purple-500">
+              <div className="mb-2 p-2 text-sm lowercase 
+              dark:bg-gray-950 border dark:border-gray-900 
+              hover:bg-black hover:bg-opacity-40">
                 #{tag.name} ({tag?.postCount})
               </div>
             </Link>
