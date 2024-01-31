@@ -1,11 +1,3 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-
 export const links = [
   {
     name: "Home",
@@ -49,7 +41,7 @@ export const projectsData = [
     link: "https://github.com/pjanardhan7u/devoverflow",
   },
   {
-    title: "Portfolio+blog",
+    title: "Portfolio+Blog",
     description:
       "This is my portfolio+blog.I build it for my personal use. Soon I will integrate authentation in this website.",
     tags: ["Next.js", "Tailwind", "TypeScript", "MongoDB", "sanity"],
@@ -82,7 +74,6 @@ export const skillsData = [
   "c++",
   "Java",
   "Python",
-  "HTML",
   "Sass",
   "JavaScript",
   "TypeScript",
@@ -92,12 +83,11 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "bootstrap",
-  "Prisma",
   "MongoDB",
   "Express",
   "MySQL",
   "Filmora-13",
-  "MSOffice",
+  "MS Office",
   "Vercel",
 ] as const;
 
@@ -172,4 +162,53 @@ export const imgGalaryData = [
     imgURL: "/images/galary/img7.jpg",
     alt: "img7",
   },
+] as const;
+
+export const people = [
+  {
+    id: 1,
+    image: "/images/people/rgv.jpg",
+    name: "RGV",
+    title:"Philosopher",
+    quote:"The sooner you let go of what you heard from your parents, what you learned in school, what you learned from society, the sooner you become intelligent.",
+  },
+  {
+    id: 2,
+    image: "/images/people/jana.jpg",
+    name: "Jana",
+    title:"Explorer",
+    quote:
+      "Deep within you, there is a captive lion confined within a self-woven cage of your own ties. Day by day, you feed it leaves and grass. It is very tired of eating them. It is dreaming of hunting.Break the shackles once and see its prey beneath the moon and stars.",
+  },
+  {
+    id: 3,
+    image: "/images/people/sreenu2.png",
+    name: "Sreenu",
+    title:"Physics Lecturer",
+    quote:
+      "A frog in the well thinks that he is the king of the world and knows nothing about the sea.",
+  },
+  {
+    id: 4,
+    image: "/images/people/maadhavi.png",
+    name: "Maadhavi",
+    title:"Maths Lecturer",
+    quote:"The future belongs to those who believe in the beauty of their dreams.",
+  },
+ 
+  {
+    id: 5,
+    image: "/images/people/nietzche.jpg",
+    name: "Friedrich Nietzsche",
+    title:"Philosopher",
+    quote: "Faith is not wanting to know what is true.",
+  },
+  {
+    id: 6,
+    image: "/images/people/ayand-rand.jpg",
+    name: "Ayn Rand",
+    title:"Philosopher",
+    quote: "We live the life of others when we read their thoughts.",
+  },
+
 ] as const;

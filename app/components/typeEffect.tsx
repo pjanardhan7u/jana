@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 export default function TypeEffect() {
   const strings = [
     'Jana',
-    'A Full-Stack Web Developer.',
+    'A Full-Stack Developer.',
     'An Ambivert',
     'A Multilingual.',
     'A Complete Linux User',
