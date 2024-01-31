@@ -1,4 +1,3 @@
-// import BlogHeader from "@/app/components/Header";
 import PostComponent from "@/app/components/PostComponent";
 import { Post } from "@/app/utils/interface";
 import { client } from "@/sanity/lib/client";
@@ -23,7 +22,7 @@ async function getPostsByTag(tag: string) {
   return posts;
 }
 
-export const revalidate = 60;
+export const revalidate = 10;
 
 interface Params {
   params: {
@@ -33,7 +32,7 @@ interface Params {
 
 const page = async ({ params }: Params) => {
   const posts: Array<Post> = await getPostsByTag(params.slug);
-  // console.log(posts, "posts by tag");
+ 
   return (
     <div>
       <BlogHeader title="" />

@@ -39,12 +39,12 @@ async function getPost(slug: string) {
   return post;
 }
 
-export const revalidate = 60;
+export const revalidate = 10;
 
 const page = async ({ params }: Params) => {
-  // console.log(params, "parmas");
+
   const post: Post = await getPost(params?.slug);
-  // console.log(post, "post");
+
 
   if (!post) {
     notFound();
@@ -53,8 +53,7 @@ const page = async ({ params }: Params) => {
   return (
     <div className="w-[100vw] flex justify-center">
       
-
-      <div className="w-[90vw]">
+      <div className="w-full">
       <BlogHeader title="" />
         <div className="mt-5 text-center  ">
           <span className={`${dateFont?.className} text-purple-500`}>

@@ -19,7 +19,7 @@ async function getAllTags() {
   return tags;
 }
 
-export const revalidate = 60;
+export const revalidate = 10;
 
 const page = async () => {
   const tags: Tag[] = await getAllTags();
