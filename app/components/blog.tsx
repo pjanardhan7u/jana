@@ -11,22 +11,21 @@ const Blog = () => {
       <div><SectionHeading>My Blog</SectionHeading></div>
       <div className="">
         <div>
-          <h2 className="sm:text-[1.5rem] my-2">My goal and me</h2>
-          <p className="sm:text-[1.2rem] my-5"> Above are the results of unscrambling loresm. Using the word generator
-             and word unscrambler for the letters L O R E S M, we unscrambled</p>
+          <h2 className="sm:text-[1.5rem] font-bold ">My bucket list of impossible things.</h2>
+          <p className="sm:text-[1rem] mb-5 mt-2">
+          Go to space and walk on MARS ,
+          Drink coffee with Billie Eilish,
+          skydiving ...etc
+
+          </p>
         </div>
 
         <div>
-          <h2 className="sm:text-[1.5rem] my-2">My goal and me</h2>
-          <p className="sm:text-[1.2rem] my-5"> Above are the results of unscrambling loresm. Using the word generator
-             and word unscrambler for the letters L O R E S M, we unscrambled</p>
+          <h2 className="sm:text-[1.5rem]  font-bold">My journey towards the Impossible.</h2>
+          <p className="sm:text-[1rem] mb-5 mt-2">Hi I’m Jana. I going share with you How traveled India to Germany for a word gave to someone. And some interesting events in my life.</p>
         </div>
 
-        <div>
-          <h2 className="sm:text-[1.5rem] my-2">My goal and me</h2>
-          <p className="sm:text-[1.2rem] my-5"> Above are the results of unscrambling loresm. Using the word generator
-             and word unscrambler for the letters L O R E S M, we unscrambled</p>
-        </div>
+        
       </div>
 
       <div className="w-full flex justify-center ">
