@@ -59,7 +59,7 @@ export default function Header() {
           <nav className="flex fixed mt-2 sm:mt-0 top-[0.15rem] left-1/2 h-5 sm:h-10 -translate-x-1/2
            sm:top-[1.7rem]  sm:py-0">
             
-            <ul className={clsx("flex w-[18rem] flex-wrap items-center gap-y-1 justify-center  font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-1")}>
+            <ul className={clsx("flex w-[18rem] gap-y-1 justify-around  font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-1")}>
               {Mlink.map((link) => (
                 
                 <motion.li
@@ -71,7 +71,7 @@ export default function Header() {
                 >
                   <Link
                     className={clsx(
-                      "flex w-full  md:mx-1 font-bold items-center sm:justify-center px-1 py-2 sm:px-5 sm:py-4 text-[12px] sm:text-[0.9rem] hover:text-gray-200 transition ",
+                      "flex w-full  md:mx-1 font-bold items-center sm:justify-center px-1 py-2 sm:px-5 sm:py-4 text-[14px] sm:text-[0.9rem] hover:text-gray-200 transition ",
                       {
                         "text-gray-200  ":
                           activeSection === link.name,
