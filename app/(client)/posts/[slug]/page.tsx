@@ -51,8 +51,20 @@ const page = async ({ params }: Params) => {
 
   return (
     <div>
+         <div className="w-full text-center my-5 ">
+      <Link href="/blog" className="mx-5">
+        #blogs
+        </Link>
+
+        <Link href="/tag" className="mx-5">
+        #tags
+        </Link>
+        
+
+      </div>
+
       {/* <BlogHeader title={post?.title} /> */}
-      <div className="text-center">
+      <div className="text-center h-[60vh]">
         <span className={`${dateFont?.className} text-purple-500`}>
           {new Date(post?.publishedAt).toDateString()}
         </span>

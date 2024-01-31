@@ -27,7 +27,9 @@ const page = async () => {
     <div>
       {/* <BlogHeader title="Tags" /> */}
       <div className="w-full text-center my-5">
-        Blog
+      <Link href="/blog" className="mx-5">
+        #blogs
+        </Link>
         <Link href="/tag" className="mx-5">
         #tags
         </Link>

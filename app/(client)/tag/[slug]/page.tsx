@@ -40,7 +40,9 @@ const page = async ({ params }: Params) => {
       {/* <BlogHeader title={`#${params?.slug}`} tags /> */}
 
       <div className="w-full text-center my-5">
-        Blog
+      <Link href="/blog" className="mx-5">
+        #blogs
+        </Link>
         <Link href="/tag" className="mx-5">
         #tags
         </Link>
@@ -50,6 +52,11 @@ const page = async ({ params }: Params) => {
       <div className="w-[100vw] h-[62vh] flex justify-center">
       
       <div className="w-[80vw]">
+        {posts.length === 0 && (
+          <div className="text-center text-2xl font-bold">
+            No posts found for #{params?.slug}
+          </div>
+        )}
         {posts?.length > 0 && posts?.map((post) => (
           <PostComponent key={post?._id} post={post} />
         ))}

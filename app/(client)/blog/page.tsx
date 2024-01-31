@@ -34,7 +34,10 @@ export default async function Home() {
 
 
       <div className="w-full text-center my-5">
-        Blog
+      <Link href="/blog" className="mx-5">
+        #blogs
+        </Link>
+
         <Link href="/tag" className="mx-5">
         #tags
         </Link>
@@ -43,7 +46,7 @@ export default async function Home() {
       </div>
       <div className="w-[100vw] flex justify-center">
         
-        <div className="sm:w-[80vw]">
+        <div className="w-full mx-3 sm:mx-0 sm:w-[80vw] ">
           {posts?.length > 0 &&
             posts?.map((post) => <PostComponent key={post?._id} post={post} />)}
         </div>
