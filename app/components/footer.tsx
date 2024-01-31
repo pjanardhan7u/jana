@@ -24,12 +24,10 @@ export default function Footer() {
           />
             </Link>
         ))}
-      
-
 
       </div>
       <small className="my-5 block text-xs text-white/60">
-        &copy; Copyright © 2024 Jana | All rights reserved.
+         Copyright © 2024 Jana | All rights reserved.
       </small>
    
     </footer>

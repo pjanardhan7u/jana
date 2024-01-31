@@ -63,7 +63,7 @@ export default function Header() {
               {Mlink.map((link) => (
                 
                 <motion.li
-                  className="h-3/4 my-1  text-gray-400 flex 
+                  className="h-3/4  my-1  text-gray-400 flex 
                   justify-center relative "
                   key={link.hash}
                   initial={{ y: -100, opacity: 0 }}
@@ -71,7 +71,7 @@ export default function Header() {
                 >
                   <Link
                     className={clsx(
-                      "flex w-full  md:mx-1 font-bold items-center sm:justify-center px-1 py-2 sm:px-5 sm:py-4 text-[14px] sm:text-[0.9rem] hover:text-gray-200 transition ",
+                      " flex w-full sm:mx-2 font-bold items-center sm:justify-center px-1 py-1 sm:px-5 sm:py-3 text-[14px] sm:text-[0.9rem] hover:text-gray-300 transition ",
                       {
                         "text-gray-200  ":
                           activeSection === link.name,
