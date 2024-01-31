@@ -6,7 +6,7 @@ import SectionHeading from "./section-heading";
 const Blog = () => {
   return (
     <div className="my-[5rem] text sm:w-[45rem] 
-    h-[40rem] flex-row justify-center">
+    h-[40vh] flex-row justify-center">
       
       <div><SectionHeading>My Blog</SectionHeading></div>
       <div className="">
@@ -21,8 +21,8 @@ const Blog = () => {
         </div>
 
         <div>
-          <h2 className="sm:text-[1.5rem]  font-bold">My journey towards the Impossible.</h2>
-          <p className="sm:text-[1rem] mb-5 mt-2">Hi I’m Jana. I going share with you How traveled India to Germany for a word gave to someone. And some interesting events in my life.</p>
+          <h2 className="sm:text-[1.5rem]  font-bold">My first love story.</h2>
+          <p className="sm:text-[1rem] mb-5 mt-2">It happed in 2011 when I was 11 years old.</p>
         </div>
 
         

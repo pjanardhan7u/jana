@@ -64,7 +64,7 @@ const page = async ({ params }: Params) => {
       </div>
 
       {/* <BlogHeader title={post?.title} /> */}
-      <div className="text-center h-[60vh]">
+      <div className="text-center ">
         <span className={`${dateFont?.className} text-purple-500`}>
           {new Date(post?.publishedAt).toDateString()}
         </span>

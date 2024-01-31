@@ -49,7 +49,7 @@ const page = async ({ params }: Params) => {
         
 
       </div>
-      <div className="w-[100vw] h-[62vh] flex justify-center">
+      <div className="w-[100vw] flex justify-center">
       
       <div className="w-[80vw]">
         {posts.length === 0 && (
