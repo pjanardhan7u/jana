@@ -5,7 +5,8 @@ import SectionHeading from "./section-heading";
 
 const Blog = () => {
   return (
-    <div className="my-[5rem] sm:w-[45rem] h-[40rem] flex-row justify-center">
+    <div className="my-[5rem] text sm:w-[45rem] 
+    h-[40rem] flex-row justify-center">
       
       <div><SectionHeading>My Blog</SectionHeading></div>
       <div className="">

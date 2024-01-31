@@ -30,14 +30,19 @@ export default function Header() {
     }, []);
     const { width } = windowSize;
     
-
+    if(width < 500){
+      const MLink= links.filter((link) => link.name !== "About");
+    }
+    else{
+      const Mlink=links;
+    }
     
 
 
 
   return (
     <>
-      {width > 100 ? (
+      {width > 300 ? (
 
         <header className="z-[999] relative">
           <motion.div
@@ -54,10 +59,9 @@ export default function Header() {
           <nav className="flex fixed mt-2 sm:mt-0 top-[0.15rem] left-1/2 h-5 sm:h-10 -translate-x-1/2
            sm:top-[1.7rem]  sm:py-0">
             
-            <ul className="flex w-[18rem] flex-wrap items-center 
-             gap-y-1 text-[0.9rem] font-medium text-gray-500 
-            sm:w-[initial] sm:flex-nowrap  sm:gap-1">
+            <ul className={clsx("flex w-[18rem] flex-wrap items-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-1")}>
               {links.map((link) => (
+                
                 <motion.li
                   className="h-3/4 my-1  text-gray-400 flex items-center 
                   justify-center relative "
@@ -80,7 +84,7 @@ export default function Header() {
                     }}
                   >
                     {link.name}
-      
+                 
                     {link.name === activeSection && (
                       <motion.span
                         className=" rounded-full absolute inset-0 -z-10 bg-gray-700 "

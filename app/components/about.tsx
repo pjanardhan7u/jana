@@ -12,7 +12,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="my-20 sm:w-[40rem] max-w-[50rem] text-justify 
+      className="w-full my-20 sm:w-[40rem] max-w-[50rem] text-justify 
       leading-8 sm:mb-40 
       scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
@@ -21,8 +21,8 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <div className="w-[20rem] sm:w-[40rem] 
-      text-[20px]  mb-5">
+      <div className=" sm:w-[40rem] 
+        mb-5">
         <p >
           <span className="ml-10"></span> At the ripe age of 23 (as of 2024),
           I&apos;m a <span className="font-bold">science enthusiast </span>
@@ -32,10 +32,10 @@ export default function About() {
         </p>
       </div>
 
-      <div className=" w-[20rem] text-justify sm:w-[40rem]
+      <div className="text-justify sm:w-[40rem]
        flex-row sm:flex justify-center  ">
         <div
-          className="rounded-xl w-[10rem] h-[18rem]
+          className="rounded-xl  w-full h-[18rem] flex justify-center
            sm:w-[12rem] sm:h-[20rem] md:w-[15rem] md:h-[28rem] "
         >
           <Image
@@ -43,7 +43,7 @@ export default function About() {
             alt="Jana"
             width={1000}
             height={1000}
-            className="ml-[5rem] sm:ml-5 rounded-xl w-[10rem] h-[18rem] sm:w-[12rem] 
+            className=" sm:ml-5 rounded-xl w-[10rem]  h-[18rem] sm:w-[12rem] 
             sm:h-[20rem] md:w-[13rem] md:h-[26rem] "
           />
 
@@ -51,7 +51,7 @@ export default function About() {
 
         <div
           className=" md:w-[25rem] sm:w-[20rem]
-            mt-[30px]  text-[20px]  sm:text-[22px] sm:ml-[20px] mx-2"
+            mt-[30px]    sm:text-[22px] sm:ml-[20px] mx-2"
         >
           <p className="mb-5  ">
             <span className="ml-10"></span>Armed with a{" "}
@@ -70,7 +70,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="w-[20rem] sm:w-[40rem] text-[20px] ">
+      <div className=" sm:w-[40rem]  ">
         <p className=" md:mx-5 mx-2">
           <span className="ml-10"></span>  I&apos;m
           currently exploring the fascinating world of
