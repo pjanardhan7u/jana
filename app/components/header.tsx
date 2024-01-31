@@ -29,7 +29,7 @@ export default function Header() {
       return () => window.removeEventListener("resize", handleResize);
     }, []);
     const { width } = windowSize;
-    let exclud=["About","Gallary","Contact"];
+    let exclud=["Gallary","Contact"];
     var Mlink;
     if(width < 500){
       Mlink=links.filter((link)=> !exclud.includes(link.name));
@@ -45,9 +45,9 @@ export default function Header() {
     <>
       {width > 300 ? (
 
-        <header className="z-[999] relative flex justify-center">
+        <header className=" z-[999] relative flex justify-center">
           <motion.div
-            className=" w-[18rem] mt-2 sm:mt-0 fixed top-0 left-1/2 h-[2rem] 
+            className=" w-[95vw] mt-2 sm:mt-0 fixed top-0 left-1/2 h-[2rem] 
             w-30 px-20 rounded-full border
              dark:border-white border-opacity-40 
              bg-opacity-100 shadow-lg sm:shadow-black/[0.03] 
