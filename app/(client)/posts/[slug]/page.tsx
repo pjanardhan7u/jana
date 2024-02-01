@@ -100,7 +100,7 @@ const richTextStyles = `
 mt-14
 text-justify
 w-[95vw]
-sm:max-w-[70vw]
+sm:max-w-[85vw]
 text-[1rem]
 m-auto
 prose-headings:my-5
