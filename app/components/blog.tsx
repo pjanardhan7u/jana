@@ -11,7 +11,7 @@ const Blog = () => {
       <div><SectionHeading>My Blog</SectionHeading></div>
       <div className="">
         
-        <Link href="http://localhost:3000/posts/12" target="_blank">
+        <Link href="https://www.janaa.me/posts/12" target="_blank">
           <div className="border-[2px] rounded-md border-purple-400  border-opacity-50 hover:bg-black hover:bg-opacity-30">
             <div className="mx-2">
               <h2 className=" sm:text-[1.5rem] font-bold ">My bucket list of impossible things.</h2>
@@ -25,7 +25,7 @@ const Blog = () => {
           </div>
         </Link>
 
-        <Link href="">
+        <Link href="https://www.janaa.me/posts/pooja-7th-class">
           <div className="my-3 border-[2px] rounded-md  border-purple-400 border-opacity-50 hover:bg-black hover:bg-opacity-30">
             <div className="mx-2">
               <h2 className="sm:text-[1.5rem]  font-bold">My first love story.</h2>

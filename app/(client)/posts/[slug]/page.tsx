@@ -55,8 +55,8 @@ const page = async ({ params }: Params) => {
       
       <div className="w-[95vw] sm:w-full">
       <BlogHeader title="" />
-        <div className="mt-5 ">
-          <span className={`${dateFont?.className} text-purple-500`}>
+        <div className="mt-5 text-center">
+          <span className={`${dateFont?.className} text-white `}>
             {new Date(post?.publishedAt).toDateString()}
           </span>
           <div className="mt-5">
@@ -99,7 +99,8 @@ const myPortableTextComponents = {
 const richTextStyles = `
 mt-14
 text-justify
-max-w-2xl
+w-[95vw]
+sm:max-w-[70vw]
 text-[1rem]
 m-auto
 prose-headings:my-5
