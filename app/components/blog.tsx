@@ -10,35 +10,36 @@ const Blog = () => {
       
       <div><SectionHeading>My Blog</SectionHeading></div>
       <div className="">
-        <div className="border-[2px] border-purple-400 border-opacity-50 ">
-          <div className="mx-2">
-            <h2 className=" sm:text-[1.5rem] font-bold ">My bucket list of impossible things.</h2>
-            <p className="sm:text-[1rem] mb-5 mt-2">
-            Go to space and walk on MARS ,
-            Drink coffee with Billie Eilish,
-            skydiving ...etc
-            
-            </p>
+        
+        <Link href="http://localhost:3000/posts/12" target="_blank">
+          <div className="border-[2px] rounded-md border-purple-400  border-opacity-50 hover:bg-black hover:bg-opacity-30">
+            <div className="mx-2">
+              <h2 className=" sm:text-[1.5rem] font-bold ">My bucket list of impossible things.</h2>
+              <p className="sm:text-[1rem] mb-5 mt-2">
+              Go to space and walk on MARS ,
+              Drink coffee with Billie Eilish,
+              skydiving ...read more
+              
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
 
-        <div className="my-3 border-[2px]  border-purple-400 border-opacity-50">
-          <div className="mx-2">
-            <h2 className="sm:text-[1.5rem]  font-bold">My first love story.</h2>
-            <p className="sm:text-[1rem] mb-5 mt-2">It happed in 2011 when I was 11 years old.</p>
+        <Link href="">
+          <div className="my-3 border-[2px] rounded-md  border-purple-400 border-opacity-50 hover:bg-black hover:bg-opacity-30">
+            <div className="mx-2">
+              <h2 className="sm:text-[1.5rem]  font-bold">My first love story.</h2>
+              <p className="sm:text-[1rem] mb-5 mt-2">My first love started in 2011 ...read more</p>
+            </div>
           </div>
-        </div>
+        </Link>
 
         
       </div>
 
       <div className=" w-full flex justify-center ">
-        <Link href="/blog" className="">
-          <Link
-            href="https://github.com/pjanardhan7u?tab=repositories"
-            target="_blank"
-            className=""
-          >
+        <Link href="/blog" className="" target="_blank">
+          
             <button
               type="button"
               className="glow-on-hover md:w-[15rem] md:h-[3rem]  text-white bg-black hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 
@@ -48,7 +49,7 @@ const Blog = () => {
               Goto Blog
             </button>
           </Link>
-        </Link>
+        
       </div>
     </div>
   );

@@ -51,11 +51,11 @@ const page = async ({ params }: Params) => {
   }
 
   return (
-    <div className="w-[100vw] flex justify-center">
+    <div className="w-[100vw]  flex justify-center">
       
-      <div className="w-full">
+      <div className="w-[95vw] sm:w-full">
       <BlogHeader title="" />
-        <div className="mt-5 text-center  ">
+        <div className="mt-5 ">
           <span className={`${dateFont?.className} text-purple-500`}>
             {new Date(post?.publishedAt).toDateString()}
           </span>
