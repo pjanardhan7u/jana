@@ -45,16 +45,16 @@ export default function About() {
             width={1000}
             height={1000}
             className=" sm:ml-5 rounded-xl w-[10rem]  h-[18rem] sm:w-[12rem] 
-            sm:h-[20rem] md:w-[13rem] md:h-[26rem] "
+            sm:h-[20rem] md:w-[15rem] md:h-[30rem] "
           />
 
         </div>
 
         <div
           className=" md:w-[25rem] sm:w-[20rem]
-            mt-[30px]    sm:text-[22px] sm:ml-[20px] mx-2"
+            mt-[0.7rem]    sm:text-[22px] sm:ml-[20px] mx-2"
         >
-          <p className="mb-5  ">
+          <p className="mb-2 ">
             <span className="ml-10"></span>Armed with a{" "}
             <span className="font-bold">B.Sc in Computer Science,</span> I&apos;m
             currently pursuing <span className="font-bold">MCA</span>   (Master of Computer Application) at the
@@ -62,22 +62,26 @@ export default function About() {
             <span className="font-bold"> NIT Trichy.</span>
           </p>
 
-          <p className="mt-10 ">
+          <p className="mt-2">
             <span className="ml-6"></span>When I&apos;m not decoding the secrets of
             algorithms, you will find me immersed in 
             documentaries,studying biographies and psycology.
           </p>
-        </div>
-      </div>
 
-      <div className=" sm:w-[40rem]  ">
-        <p className=" md:mx-5 mx-2">
-          <span className="ml-10"></span>  I&apos;m
+          <p className="  mt-3">
+          <span className="mx-5"></span>  I&apos;m
           currently exploring the fascinating world of
           Next.js, turning every line of code into a portal of endless
           possibilities.I am on the <span className="font-bold">hunt</span>  for
             a full-time position.
         </p>
+        </div>
+        
+      </div>
+      
+
+      <div className=" sm:w-[40rem]  ">
+        
    
       </div>
     </motion.section>
