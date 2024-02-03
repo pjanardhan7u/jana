@@ -51,7 +51,7 @@ const page = async ({ params }: Params) => {
   }
 
   return (
-    <div className="w-[100vw]  flex justify-center">
+    <div className="w-[100vw]   flex justify-center">
       
       <div className="w-[95vw] sm:w-full">
       <BlogHeader title="" />
@@ -77,6 +77,7 @@ const page = async ({ params }: Params) => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
@@ -100,7 +101,8 @@ const richTextStyles = `
 mt-14
 text-justify
 w-[95vw]
-sm:max-w-[85vw]
+sm:w-[90vw]
+md:w-[75vw]
 text-[1rem]
 m-auto
 prose-headings:my-5
