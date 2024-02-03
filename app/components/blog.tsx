@@ -25,11 +25,13 @@ const Blog = () => {
           </div>
         </Link>
 
-        <Link href="https://www.janaa.me/posts/pooja-7th-class">
+        <Link href="https://www.janaa.me/posts/two-decisions-that-changed-my-life">
           <div className="my-3 border-[2px] rounded-md  border-purple-400 border-opacity-50 hover:bg-black hover:bg-opacity-30">
             <div className="mx-2">
-              <h2 className="sm:text-[1.5rem]  font-bold">My first love story.</h2>
-              <p className="sm:text-[1rem] mb-5 mt-2">My first love started in 2011 ...read more</p>
+              <h2 className="sm:text-[1.5rem]  font-bold">Two decisions that changed my life.</h2>
+              <p className="sm:text-[1rem] mb-5 mt-2">My life is like more than a thrilling movie and 
+              thats because of 2 decisions that I took in my life one about love and one about 
+              my goal. ...read more</p>
             </div>
           </div>
         </Link>
