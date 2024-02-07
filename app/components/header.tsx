@@ -37,7 +37,14 @@ export default function Header() {
     else{
       Mlink=links;
     }
-    
+  
+  // get the route name
+  const routeName = window.location.pathname;
+  // get the route name
+  const route = routeName.split("/")[1];
+  // console.log(route);
+  
+  
 
 
   return (
@@ -71,10 +78,10 @@ export default function Header() {
                 >
                   <Link
                     className={clsx(
-                      " flex w-full sm:mx-2 font-bold items-center sm:justify-center px-1 py-1 sm:px-5 sm:py-3 text-[14px] sm:text-[0.9rem] hover:text-gray-300 transition ",
+                      " flex w-full sm:mx-2 font-bold items-center sm:justify-center px-1 py-1 sm:px-4 sm:py-3 text-[14px] sm:text-[1rem] hover:text-gray-300 transition ",
                       {
-                        "text-gray-200  ":
-                          activeSection === link.name,
+                        "text-gray-100  ":
+                          activeSection === (link.name),
                       }
                     )}
                     href={link.hash}
@@ -85,7 +92,7 @@ export default function Header() {
                   >
                     {link.name}
                  
-                    {link.name === activeSection && (
+                    {(link.name === activeSection  ) && (
                       <motion.span
                         className=" rounded-full absolute inset-0 -z-10 bg-gray-700 "
                         layoutId="activeSection"

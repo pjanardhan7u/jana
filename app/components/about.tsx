@@ -52,7 +52,7 @@ export default function About() {
 
         <div
           className=" md:w-[25rem] sm:w-[20rem]
-            mt-[0.7rem]    sm:text-[22px] sm:ml-[20px] mx-2"
+            mt-[0.7rem] sm:ml-[20px] mx-2"
         >
           <p className="mb-2 ">
             <span className="ml-10"></span>Armed with a{" "}
