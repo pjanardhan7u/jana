@@ -38,13 +38,7 @@ export default function Header() {
       Mlink=links;
     }
   
-  // get the route name
-  const routeName = window.location.pathname;
-  // get the route name
-  const route = routeName.split("/")[1];
-  // console.log(route);
-  
-  
+
 
 
   return (
