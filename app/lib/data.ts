@@ -31,6 +31,7 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+
   {
     title: "DevOverflow",
     description:
@@ -41,6 +42,17 @@ export const projectsData = [
     link: "https://github.com/pjanardhan7u/devoverflow",
   },
   {
+    
+    title: "Figma-Clone",
+    description:
+      "This website is similar to figma with minimalistic features ",
+    tags: ["Next.Js", "TypeScript", "TailwindCSS","Liveblocks","Fabric.js"],
+    imageUrl: "/images/figma.png",
+    gitHubLink: "https://github.com/pjanardhan7u/figma-clone",
+    link: "https://figma.janaa.me",
+  
+},
+  {
     title: "Portfolio+Blog",
     description:
       "This is my portfolio+blog.I build it for my personal use. Soon I will integrate authentation in this website.",
@@ -50,24 +62,24 @@ export const projectsData = [
     link: "https://janaa.me",
   },
   {
-    title: "Escape Jungle Game",
-    description:
-      "This is my first projectwork that I built as a animated game. I build this from scratch with my own idea",
-    tags: ["HTML", "Sass", "JavaScript"],
-    imageUrl: "/images/escapeJungle.png",
-    gitHubLink: "https://github.com/pjanardhan7u/Escape_Jungle",
-    link: "https://pjanardhan7u.github.io/Escape_Jungle/",
-  },
-
-  {
     title: "NewsPulse",
     description:
       "NewsPulse is a news aggregator and weather app. It shows the latest news and weather of any city in the world.",
     tags: ["html", "Sass", "JavaScript", "API"],
     imageUrl: "/images/newspulse.png",
     gitHubLink: "https://github.com/pjanardhan7u/NewsPulse",
-    link: "https://pjanardhan7u.github.io/NewsPulse/index.html",
+    link: "https://news.janaa.me",
   },
+  {
+    title: "Escape Jungle Game",
+    description:
+      "This is my first projectwork that I built as a animated game. I build this from scratch with my own idea",
+    tags: ["HTML", "Sass", "JavaScript"],
+    imageUrl: "/images/escapeJungle.png",
+    gitHubLink: "https://github.com/pjanardhan7u/Escape_Jungle",
+    link: "https://escape-jungle.vercel.app/",
+  },
+
 ] as const;
 
 export const skillsData = [

@@ -29,7 +29,7 @@ export default function Header() {
       return () => window.removeEventListener("resize", handleResize);
     }, []);
     const { width } = windowSize;
-    let exclud=["Gallary","Contact"];
+    let exclud=["Gallery","Contact"];
     var Mlink;
     if(width < 500){
       Mlink=links.filter((link)=> !exclud.includes(link.name));
