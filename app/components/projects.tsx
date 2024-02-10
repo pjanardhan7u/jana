@@ -6,13 +6,14 @@ import { projectsData } from "@/app/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/app/lib/hooks";
 import Link from "next/link";
+import LtGt from "./lgGt";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28 ">
-      <SectionHeading>My projects</SectionHeading>
+      <SectionHeading><LtGt>My projects</LtGt> </SectionHeading>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
@@ -21,7 +22,7 @@ export default function Projects() {
         ))}
         <div className="w-full h-[10rem] flex-row justify-center ">
           <div className="w-full flex justify-center">
-            <h1 className="text-[1rem] md:text-[2rem] ">See my other project works</h1>
+          <SectionHeading>See my other project works </SectionHeading>
           </div>
           
           <div className="w-full md:h-[5rem]  flex justify-center">

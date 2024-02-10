@@ -3,7 +3,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import {people} from "@/app/lib/data";
-
+import Gt from "./gt";
+import Lt from "./lt";
+import SectionHeading from "./section-heading";
 
 const Slider = () => {
   const [state, setState] = useState(0);
@@ -28,9 +30,8 @@ const Slider = () => {
 
           <div className="flex justify-center w-full">
             <div>
+            <SectionHeading><Lt/>People I Like <Gt/></SectionHeading>
               
-              <p className="my-10  text-3xl capalize font-medium 
-              text-center">People I Like</p>
               <div className="w-full h-[12rem]">
               
               <div className="w-full flex justify-center ">

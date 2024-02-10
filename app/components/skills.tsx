@@ -6,6 +6,7 @@ import { skillsData } from "@/app/lib/data";
 import { useSectionInView } from "@/app/lib/hooks";
 import { motion } from "framer-motion";
 import { nonTectSkillsData } from "@/app/lib/data";
+import LtGt from "./lgGt";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -31,7 +32,7 @@ export default function Skills() {
       ref={ref}
       className=" rounded-xl mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My Technical skills</SectionHeading>
+      <SectionHeading><LtGt>Technical skills</LtGt></SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -57,7 +58,7 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My Non-Technical skills</SectionHeading>
+      <SectionHeading> <LtGt>Non-Technical skills</LtGt></SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {nonTectSkillsData.map((skill, index) => (
           <motion.li

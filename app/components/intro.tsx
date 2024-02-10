@@ -9,6 +9,8 @@ import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/app/context/active-section-context";
 import TypeEffect from "./typeEffect";
+import LtGt from "./lgGt";
+
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -50,10 +52,18 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <div>
-          <span className="font-bold">
-            Hello World, I&apos;m  {TypeEffect()}
+          <div className="font-bold">
+            Hello World, I&apos;m 
+            <div className="flex justify-center" >
+              <LtGt>
+              {TypeEffect()}
+                </LtGt>
+           
             
-          </span>
+            </div>
+            
+            
+          </div>
         </div>
       </motion.h1>
 

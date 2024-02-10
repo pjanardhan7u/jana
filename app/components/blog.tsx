@@ -1,14 +1,14 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "./section-heading";
+import LtGt from "./lgGt";
 
 const Blog = () => {
   return (
     <div className="my-[5rem] text sm:w-[45rem] 
     h-[40vh] flex-row justify-center">
       
-      <div><SectionHeading>My Blog</SectionHeading></div>
+      <div><SectionHeading><LtGt>My Blog</LtGt></SectionHeading></div>
       <div className="">
         
         <Link href="/posts/12" target="_blank">

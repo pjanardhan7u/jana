@@ -4,6 +4,8 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
+import Gt from "./gt";
+import Lt from "./lt";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -26,7 +28,7 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Get in Touch</SectionHeading>
+      <SectionHeading><Lt/>Get in Touch<Gt/></SectionHeading>
 
       <p className="text-gray-300 mt-6 dark:text-white/80 text-[1.2rem]">
         Please <span className="font-bold">contact me</span> directly at{" "}

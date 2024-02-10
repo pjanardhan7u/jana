@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
 import Image from "next/image";
+import LtGt from "./lgGt";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -20,7 +21,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading> <LtGt>About</LtGt> </SectionHeading>
       <div className=" sm:w-[40rem] 
         mb-5">
         <p >
