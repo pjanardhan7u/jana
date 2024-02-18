@@ -43,13 +43,13 @@ export const projectsData = [
   },
   {
     
-    title: "Figma-Clone",
+    title: "PXLME",
     description:
-      "This website is similar to figma with minimalistic features ",
-    tags: ["Next.Js", "TypeScript", "TailwindCSS","Liveblocks","Fabric.js"],
-    imageUrl: "/images/figma.png",
-    gitHubLink: "https://github.com/pjanardhan7u/figma-clone",
-    link: "https://figma.janaa.me",
+      "This is a AI powered image SaaS website. It is a platform where you can upload your images and get the AI generated images.",
+    tags: ["Next.Js", "TypeScript", "TailwindCSS","MongoDB","Clerk"],
+    imageUrl: "/images/pxlme.png",
+    gitHubLink: "https://github.com/pjanardhan7u/pxl",
+    link: "https://www.pxlme.tech",
   
 },
   {
