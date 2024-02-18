@@ -95,7 +95,7 @@ export default function Intro() {
           className="group px-7 border border-white-2 py-3 flex items-center gap-2 
           rounded-full focus:scale-110 hover:scale-110 active:scale-105 
           transition cursor-pointer borderBlack bg-white/10"
-          href="/jana_resume.pdf"
+          href="/Jana_resume.pdf"
           download
         >
           See My Resume{" "}
