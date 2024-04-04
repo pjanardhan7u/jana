@@ -32,7 +32,11 @@ interface Params {
 
 const page = async ({ params }: Params) => {
   const posts: Array<Post> = await getPostsByTag(params.slug);
- 
+  // sort posts by date
+  posts.sort((a, b) => {
+    return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+  });
+
   return (
     <div>
       <BlogHeader title="" />

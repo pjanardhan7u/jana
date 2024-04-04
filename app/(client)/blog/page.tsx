@@ -25,7 +25,10 @@ export const revalidate = 60;
 
 export default async function Home() {
   const posts: Post[] = await getPosts();
-
+  // sort posts by date
+  posts.sort((a, b) => {
+    return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+  });
 
   return (
     <div className="">
@@ -33,6 +36,7 @@ export default async function Home() {
 
       <div className="w-[100vw] mt-5 flex justify-center">
         <div className="w-full mx-3 sm:mx-0 sm:w-[80vw] ">
+
           {posts?.length > 0 &&
             posts?.map((post) => <PostComponent key={post?._id} post={post} />)}
         </div>
